@@ -23,7 +23,7 @@ html, body {
 
 /*--------------- typewriter effect --------------- */
 .line {
-      width: 24em;
+      width: 25em;
       top: 50%;
       margin: auto;
       border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -34,8 +34,8 @@ html, body {
 }
 
 .anim-typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCussor 500ms steps(40) infinite normal;
+      animation: typewriter 5s steps(40) 1s 1 normal both,
+      blinkTextCussor 503ms steps(41) infinite normal;
 }
 
 @keyframes typewriter {
@@ -87,6 +87,13 @@ nav #brand {
 nav #brand a {
       color: #fff;
       transition: all 0.3s ease-out;
+    
+}
+
+.brand-name{
+  @media (max-width:360px) {
+            font-size:15px;
+      }
 }
 
 nav #brand a:hover {
@@ -249,6 +256,29 @@ nav #menu li a:hover {
       }
 }
 
+.my-email,.view-more-link{
+      color: #fff;
+      text-decoration: none;
+}
+
+.links:hover{
+      text-decoration: none;
+}
+
+.my-email:hover{
+      color: #dbd9d9;
+      text-decoration: underline;
+}
+.view-more-link:hover{
+      color: #dbd9d9;
+      text-decoration: underline;
+}
+/* 
+.connection{
+      display: flex;
+      flex-direction: row;
+} */
+
 /*--------------- scroll down icon animation --------------- */
 .scroll-down {
       position: absolute;
@@ -321,34 +351,71 @@ h6 {
       bottom: 0;
 }
 
-.project2 {
-      background: url(./images/Premium\ Vector\ _\ Real\ Estate\ Logo.jfif) no-repeat 50% 50%;
-      background-size: cover;
+.project1a{
+      background: url(./images/Sikwila-Natasha-DaasAfrica_PROJECT.png) no-repeat 50% 50%;
+      background-size: cover;    
 }
 
-.project2::after {
-      content: "Real Eastate.";
+.project1a::after {
+      content: "DAAS Africa Website.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
       color: #fff;
+      display: block;
+      top: 8%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+}
+
+.project2 {
+      background: url(./images/Letter\ &\ Plane\ Graphic\ Passport\ Case.jpeg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project2::after {
+      content: "Zim E-passport Website.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: rgb(204, 204, 204);
       display: block;
       top: 80%;
       left: 90%;
       right: 0;
       bottom: 0;
 }
+
+.project2a{
+      background: url(./images/Genesis-project-rep.png) no-repeat 50% 50%;
+      background-size: cover;   
+}
+
+.project2a::after {
+      content: "Genesis Real Estate Website.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: rgb(204, 204, 204);
+      display: block;
+      top: 80%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+}
+
 a:hover{
       text-decoration: none;
 }
 
 .project3 {
-      background: url(./images/Blank\ Notebook\,\ Notebook.jpeg) no-repeat 50% 50%;
+      background: url(./images/Premium\ Vector\ _\ Real\ Estate\ Logo.jfif) no-repeat 50% 50%;
       background-size: cover;
 }
 
 .project3::after {
-      content: "Notebook App.";
+      content: "Real Eastate.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -367,21 +434,61 @@ a:hover{
 }
 
 .project5{
-      background: url(./images/Letter\ &\ Plane\ Graphic\ Passport\ Case.jpeg) no-repeat 50% 50%;
+      background: url(./images/Blank\ Notebook\,\ Notebook.jpeg) no-repeat 50% 50%;
       background-size: cover;  
 }
 .project5::after {
-      content: "Zim E-passport Website.";
+      content: "Notebook App.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #f5ecec;
+      color: #fff;
       display: block;
       top: 8%;
       left: -60%;
       right: 0;
       bottom: 0;
 }
+
+.project6{
+      background: url(./images/Calculator\ Icon\ .jpeg) no-repeat 50% 50%;
+      background-size: cover;   
+}
+
+.project6::after{
+      content: "Calculator App.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+}
+
+/* .project2 {
+      background: url(./images/Premium\ Vector\ _\ Real\ Estate\ Logo.jfif) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project2::after {
+      content: "Real Eastate.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 80%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+} */
+
+
+
 
 .project4::after {
       content: "Car Rental App.";
@@ -561,11 +668,28 @@ a:hover{
 }
 
 .image1d{
-      background: url(../Minimal-Portfolio-Website-master/images/car\ logo\ with\ car\ outline.jfif) no-repeat 50% 70%;
+      background: url(./images/car\ logo\ with\ car\ outline.jfif) no-repeat 50% 70%;
       background-position-x: center;
       background-size: cover; 
 }
 
+.image5{
+      background: url(./images/PASSPORT-WEB.png) no-repeat 50% 70%;
+      background-position-x: center;
+      background-size: cover;     
+}
+
+.image6{
+      background: url(./images/daasp\ 3.png) no-repeat 50% 70%;
+      background-position-x: center;
+      background-size: cover;     
+}
+
+.image7{
+      background: url(./images/gen-web-rep2.png) no-repeat 50% 70%;
+      background-position-x: center;
+      background-size: cover;    
+}
 /*---------------about page --------------- */
 
 .about {
@@ -575,7 +699,7 @@ a:hover{
 
 
 .image {
-      background: url(../Minimal-Portfolio-Website-master/images/Screenshot_20240809_174000_Chrome.jpg) no-repeat 50% 70%;
+      background: url(./images/Giulia\ @ArternDesign.jpeg) no-repeat 50% 70%;
       background-position-x: center;
       background-size: cover;
 }
